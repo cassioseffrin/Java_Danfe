@@ -79,7 +79,7 @@ public class ImpressaoUtil {
         impressaoNFCe.setXml(xml);
         impressaoNFCe.setPathExpression("/");
         impressaoNFCe.setJasper(ImpressaoUtil.class.getResourceAsStream("/jasper/nfce/danfce.jasper"));
-        impressaoNFCe.getParametros().put("Logo", ImpressaoService.class.getResourceAsStream("/img/nfe.jpg"));
+        impressaoNFCe.getParametros().put("Logo", ImpressaoService.class.getResourceAsStream("/img/logo.png"));
         impressaoNFCe.getParametros().put("UrlConsulta", urlConsulta);
         return impressaoNFCe;
     }
